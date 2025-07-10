@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  background-color: black;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  margin: 100px auto;
+  text-align: center;
+  width: 400px;
+  background-color: #555;
+  font-family: Cascadia Mono;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #fff;
+}
+
+.delete {
+  transition: color .1s linear;
+  color: red;
+}
+
+.check {
+  transition: color .1s linear;
+  color: #0d0;
+}
+
+.check:hover {
+  fill: #0d0c;
+  color: #fff;
+}
+
+.delete:hover{
+  fill: #d00c;
+  color: #fff;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.homework {
+  display: grid;
+  grid-template-columns: 20px 1fr 50px 50px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  align-items: center;
+  gap: 5px;
+}
+
+.completed {
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.text{
+  text-align: start;
+  padding-left: 20px;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.addTask {
+  width: 400px;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.addTask > h1 {
+  margin: 0;
+  color: #000;
+}
+
+label {
+  color: #fff;
+  font-size: 16px;
+}
+
+.addForm {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin: auto;
+}
+
+#taskname {
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #333;
+  font-family: Cascadia Mono;
+}
+
+.addForm > button {
+  display: flex;
+  background-color: transparent;
+}
+
+.add {
+  color: #ddd;
+}
+
+.header {
+  margin: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.selects {
+  margin:15px auto;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.filterSelect {
+  padding: 4px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 14px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #333;
+  padding: 5px;
+  border-radius: 5px;
+}
